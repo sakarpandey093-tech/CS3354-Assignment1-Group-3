@@ -26,4 +26,26 @@ public class GroceryManagement {
             }
         }
     }
+    /**
+     * 
+     * Restocks an item in the inventory by adding the specified amount to its stock.
+     *   If the item is not found, it prints a message indicating so.
+     * @param names names of the items
+     * @param stocks amount of items in stock
+     * @param target name of item to restock
+     * @param amount amount to add to the stock of the item
+     */
+    public static void restockItem(String[] names, int[] stocks, String target, int amount) {
+        boolean found = false;
+        for (int i = 0; i < names.length; i++) {
+            if (names[i] != null && names[i].equals(target)) {
+                stocks[i] += amount;
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("Item not found.");
+        }
+    }
 }
