@@ -1,11 +1,40 @@
-public class GroceryManagement {
+import java.util.Scanner;
 
+public class GroceryManagement {
     public static void main(String[] args) {
 
         String[] itemNames = new String[10];
         double[] itemPrices = new double[10];
         int[] itemStocks = new int[10];
 
+        Scanner input = new Scanner(System.in);
+
+        while(true){
+            System.out.println("Grocery Management Software");
+            System.out.println("MENU");
+            System.out.println("Type 1 to display the inventory");
+            System.out.println("Type 2 to restock an item");
+            System.out.println("Type 3 to exit");
+
+            int option = input.nextInt();
+            input.nextLine();
+
+            if(option == 1){
+                printInventory(itemNames, itemPrices, itemStocks);
+            } else if(option == 2){
+                System.out.println("What would you like to add?");
+                String target = input.nextLine();
+                System.out.println("Amount?");
+                int amount = input.nextInt();
+                input.nextLine();
+                restockItem(itemNames, itemStocks, target, amount);
+            } else if(option == 3){
+                break;
+            } else{
+                System.out.println("Invalid option.");
+            }
+        }
+    input.close();
     }
      /**
      * Prints the items that are in the inventory.
