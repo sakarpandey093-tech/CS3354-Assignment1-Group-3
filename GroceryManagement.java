@@ -1,11 +1,25 @@
 import java.util.Scanner;
 
+/**
+ * A grocery management system that tracks items using parallel arrays.
+ * Item names, prices, and stock counts are stored in three arrays, where
+ * the same index in each array refers to the same item. A menu lets the
+ * user view the inventory, restock an item, or exit.
+ *
+ * @author Sakar Pandey
+ * @author Johnny Reed
+ * @author Danylo Huk
+ * @author Niruta Chataut
+ * @author Mohamed Adeel Rahman
+ * 
+ */
+
 public class GroceryManagement {
     
     /**
-     * Initializes arrays, provides a user interface.
-     *
-     * @param args (not used)
+     * Creates the parallel arrays and runs the menu loop. The user can
+     * enter 1 to view the inventory, 2 to restock an item, or 3 to exit.
+     * @param args command-line arguments (not used)
      */
     public static void main(String[] args) {
 
