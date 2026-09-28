@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
 public class GroceryManagement {
+    
+    /**
+     * Initializes arrays, provides a user interface.
+     *
+     * @param args (not used)
+     */
     public static void main(String[] args) {
 
         String[] itemNames = new String[10];
