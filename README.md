@@ -60,7 +60,7 @@ in a browser to view it.
 | Johnny Reed | johnnyer577 | feature-restock | Wrote `restockItem` (search and restock) |
 | Danylo Huk | h3ccc | feature-menu | Wrote the Scanner menu loop in `main` |
 | Niruta Chataut | nirutachataut | feature-javadoc | Wrote and generated Javadoc into `docs/` |
-| Adeel Mohamed Adeel Ur Rahman | adeelrahman | feature-test | Wrote class/method Javadoc; tested the merged program; Revised README |
+| Mohamed Adeel Rahman | adeelrahman | feature-test | Wrote class/method Javadoc; tested the merged program; Revised README |
 
 
 ## Screenshots
