@@ -27,6 +27,11 @@ public class GroceryManagement {
         double[] itemPrices = new double[10];
         int[] itemStocks = new int[10];
 
+        // Sample data for testing
+        itemNames[0] = "Milk";   itemPrices[0] = 3.49; itemStocks[0] = 10;
+        itemNames[1] = "Bread";  itemPrices[1] = 2.99; itemStocks[1] = 15;
+        itemNames[2] = "Eggs";   itemPrices[2] = 4.25; itemStocks[2] = 12;
+
         Scanner input = new Scanner(System.in);
 
         while(true){
